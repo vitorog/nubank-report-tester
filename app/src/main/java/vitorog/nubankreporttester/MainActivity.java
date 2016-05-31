@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 String text = Constants.NUBANK_BRAZILIAN_CURRENCY_SYMBOL + valueStr  + Constants.NUBANK_NOTIFICATION_TEXT_EXAMPLE;
                 builder.setContentText(text);
                 builder.setSmallIcon(R.mipmap.ic_launcher);
+                builder.setWhen(System.currentTimeMillis());
                 manager.notify((int)System.currentTimeMillis(), builder.build());
             }
         });
